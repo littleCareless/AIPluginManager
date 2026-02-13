@@ -137,11 +137,10 @@ jobs:
 
       - name: Create DMG
         run: |
-          # Create DMG using create-dmg (need to install first)
+          # Create DMG using create-dmg
           brew install create-dmg
           create-dmg \
             --volname "AIPluginManager" \
-            --volicon "Resources/Assets.xcassets/AppIcon.appiconset/AppIcon-512.png" \
             --window-pos 200 120 \
             --window-size 600 400 \
             --icon-size 100 \
