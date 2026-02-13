@@ -1,5 +1,5 @@
 import XCTest
-@testable import AIPluginManager
+@testable import PluginHub
 
 final class PluginModelTests: XCTestCase {
     func testPluginUniqueId() {
@@ -117,10 +117,10 @@ final class PluginStoreCASTests: XCTestCase {
 
     override func setUpWithError() throws {
         tempRoot = FileManager.default.temporaryDirectory
-            .appendingPathComponent("AIPluginManagerTests-\(UUID().uuidString)", isDirectory: true)
+            .appendingPathComponent("PluginHubTests-\(UUID().uuidString)", isDirectory: true)
         try FileManager.default.createDirectory(at: tempRoot, withIntermediateDirectories: true)
 
-        defaultsSuiteName = "AIPluginManagerTests.\(UUID().uuidString)"
+        defaultsSuiteName = "PluginHubTests.\(UUID().uuidString)"
         defaults = UserDefaults(suiteName: defaultsSuiteName)
         defaults.removePersistentDomain(forName: defaultsSuiteName)
         defaults.set(true, forKey: "enableSymlinks")

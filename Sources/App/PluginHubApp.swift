@@ -1,7 +1,7 @@
 import SwiftUI
 
 @main
-struct AIPluginManagerApp: App {
+struct PluginHubApp: App {
     @StateObject private var appState = AppState()
     @StateObject private var languageManager = LanguageManager.shared
 

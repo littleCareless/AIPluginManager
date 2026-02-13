@@ -1,0 +1,26 @@
+# macOS
+.DS_Store
+
+# Xcode user/local state
+*.xcuserstate
+xcuserdata/
+*.xccheckout
+*.xcscmblueprint
+
+# Xcode build artifacts
+build/
+DerivedData/
+*.xcarchive
+
+# Swift Package Manager
+.build/
+.swiftpm/
+Package.resolved
+
+# macOS packaging artifacts
+*.dmg
+*.pkg
+
+# Optional local env files
+.env
+.env.*
