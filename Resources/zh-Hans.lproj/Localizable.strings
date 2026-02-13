@@ -77,3 +77,108 @@
 "editor.type.windsurf" = "Windsurf";
 "editor.type.trae" = "Trae";
 "editor.type.marsCode" = "MarsCode";
+
+// MARK: - 语言
+"language.system" = "跟随系统";
+"language.english" = "English";
+"language.simplifiedChinese" = "简体中文";
+
+// MARK: - 菜单与排序
+"settings.preferences" = "偏好设置...";
+"sort.title" = "排序";
+"sort.name" = "名称";
+"sort.size" = "大小";
+"sort.publisher" = "发布者";
+"sort.date" = "日期";
+
+// MARK: - 插件列表
+"plugin.searchPlaceholder" = "搜索插件名称 / 发布者 / ID";
+"plugin.count" = "共 %d 个";
+"plugin.bulkActions" = "批量操作";
+"plugin.linkToEditor" = "链接到 %@";
+"plugin.linkToAllEnabled" = "链接到所有启用编辑器";
+"plugin.publisher" = "发布者";
+"plugin.source" = "来源";
+"plugin.status" = "状态";
+"plugin.updateAvailable" = "有新版本";
+"plugin.source.local" = "本地";
+"plugin.source.linked" = "已链接";
+"plugin.source.linkedShort" = "链接";
+"plugin.source.marketplace" = "市场";
+"editor.noneAvailable" = "暂无可用编辑器";
+
+// MARK: - 重复详情
+"duplicate.reportTitle" = "重复检测报告";
+"duplicate.optimizationSuggestions" = "优化建议";
+"duplicate.applyToAll" = "应用到所有";
+"duplicate.stats.plugins" = "重复插件";
+"duplicate.stats.instances" = "重复实例";
+"duplicate.stats.space" = "可节省空间";
+"duplicate.stats.editors" = "编辑器数量";
+"duplicate.versionConflict" = "版本冲突";
+"duplicate.masterCopy" = "主副本";
+"duplicate.summary" = "摘要";
+"duplicate.actionCount" = "操作数量";
+"duplicate.actionDetails" = "操作详情";
+"duplicate.estimatedTime" = "预计时间";
+"duplicate.estimatedTimeSeconds" = "%.0f 秒";
+"duplicate.executeOptimization" = "执行优化";
+"duplicate.generatingPlan" = "正在生成计划...";
+"duplicate.analyzing" = "正在分析重复插件...";
+"duplicate.action.link" = "链接 %@ 到 %@";
+"duplicate.action.remove" = "删除 %@ 从 %@";
+"duplicate.action.cleanup" = "清理 %@";
+
+// MARK: - 去重建议
+"dedup.suggestion.linkedPlugins" = "%d 个插件已有链接，可以进一步优化";
+"dedup.suggestion.versionConflict" = "'%@' 有版本冲突: %@";
+"dedup.suggestion.spaceSaved" = "通过去重可节省约 %@ 空间";
+"dedup.suggestion.bulkLink" = "建议使用批量链接功能统一管理重复插件";
+
+// MARK: - 通用扩展
+"common.close" = "关闭";
+"common.done" = "完成";
+"common.unknown" = "未知";
+
+// MARK: - 设置扩展
+"settings.storage" = "存储";
+"settings.advanced" = "高级";
+"settings.launch" = "启动";
+"settings.launchAtLogin" = "登录后启动";
+"settings.updates" = "更新";
+"settings.autoCheckUpdates" = "自动检查更新";
+"settings.storageLocation" = "存储位置";
+"settings.storagePath" = "存储路径";
+"settings.storedPlugins" = "已存储插件";
+"settings.totalSize" = "总大小";
+"settings.clearStorage" = "清空存储";
+"settings.clearConfirmTitle" = "确认清空";
+"settings.clear" = "清空";
+"settings.clearConfirmMessage" = "这将删除所有存储的插件，此操作不可恢复。";
+"settings.linkSettings" = "链接设置";
+"settings.useSymlink" = "使用符号链接";
+"settings.useSymlinkHelp" = "禁用后使用硬链接（仅在不支持符号链接的系统中）。";
+"settings.autoLinkAfterScan" = "扫描后自动链接";
+"settings.autoLinkAfterScanHelp" = "自动链接重复插件到存储。";
+"settings.fileDisplay" = "文件显示";
+"settings.showHiddenFiles" = "显示隐藏文件";
+"settings.debugMode" = "调试模式";
+"settings.debugModeHelp" = "显示额外的调试信息。";
+"settings.dataManagement" = "数据管理";
+"settings.resetAll" = "重置所有设置";
+"settings.clearCache" = "清除缓存";
+
+// MARK: - 编辑器扩展
+"editor.restoreDefaults" = "恢复默认";
+"editor.deleteConfirmTitle" = "确认删除";
+"editor.deleteConfirmMessage" = "确定要删除编辑器「%@」吗？";
+"editor.basicInfo" = "基本信息";
+"editor.name" = "名称";
+"editor.type" = "类型";
+"editor.extensionsDirectory" = "扩展目录";
+"editor.path" = "路径";
+"editor.selectPath" = "选择路径";
+"editor.status" = "状态";
+"editor.enabled" = "启用";
+"editor.directoryExists" = "目录存在";
+"editor.directoryMissing" = "目录不存在";

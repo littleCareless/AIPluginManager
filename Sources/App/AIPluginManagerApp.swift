@@ -74,6 +74,7 @@ final class AppState: ObservableObject {
     @Published var showingPreferences = false
     @Published var showingError = false
     @Published var errorMessage = ""
+    @Published private(set) var hasPerformedInitialScan = false
 
     // MARK: - 搜索和过滤
     @Published var searchText = ""
@@ -177,6 +178,12 @@ final class AppState: ObservableObject {
         }
 
         isLoading = false
+    }
+
+    func performInitialScanIfNeeded() async {
+        guard !hasPerformedInitialScan else { return }
+        hasPerformedInitialScan = true
+        await scanAllEditors()
     }
 
     func scanEditor(_ editor: Editor) async {

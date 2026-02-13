@@ -77,3 +77,108 @@
 "editor.type.windsurf" = "Windsurf";
 "editor.type.trae" = "Trae";
 "editor.type.marsCode" = "MarsCode";
+
+// MARK: - Language
+"language.system" = "System";
+"language.english" = "English";
+"language.simplifiedChinese" = "Simplified Chinese";
+
+// MARK: - Menu & Sort
+"settings.preferences" = "Preferences...";
+"sort.title" = "Sort";
+"sort.name" = "Name";
+"sort.size" = "Size";
+"sort.publisher" = "Publisher";
+"sort.date" = "Date";
+
+// MARK: - Plugin List
+"plugin.searchPlaceholder" = "Search plugin name / publisher / ID";
+"plugin.count" = "%d total";
+"plugin.bulkActions" = "Bulk Actions";
+"plugin.linkToEditor" = "Link to %@";
+"plugin.linkToAllEnabled" = "Link to all enabled editors";
+"plugin.publisher" = "Publisher";
+"plugin.source" = "Source";
+"plugin.status" = "Status";
+"plugin.updateAvailable" = "Update available";
+"plugin.source.local" = "Local";
+"plugin.source.linked" = "Linked";
+"plugin.source.linkedShort" = "Link";
+"plugin.source.marketplace" = "Marketplace";
+"editor.noneAvailable" = "No editors available";
+
+// MARK: - Duplicate Details
+"duplicate.reportTitle" = "Duplicate Detection Report";
+"duplicate.optimizationSuggestions" = "Optimization Suggestions";
+"duplicate.applyToAll" = "Apply to All";
+"duplicate.stats.plugins" = "Duplicate Plugins";
+"duplicate.stats.instances" = "Duplicate Instances";
+"duplicate.stats.space" = "Space Savings";
+"duplicate.stats.editors" = "Editors";
+"duplicate.versionConflict" = "Version Conflict";
+"duplicate.masterCopy" = "Master Copy";
+"duplicate.summary" = "Summary";
+"duplicate.actionCount" = "Action Count";
+"duplicate.actionDetails" = "Action Details";
+"duplicate.estimatedTime" = "Estimated Time";
+"duplicate.estimatedTimeSeconds" = "%.0f sec";
+"duplicate.executeOptimization" = "Execute Optimization";
+"duplicate.generatingPlan" = "Generating plan...";
+"duplicate.analyzing" = "Analyzing duplicate plugins...";
+"duplicate.action.link" = "Link %@ to %@";
+"duplicate.action.remove" = "Remove %@ from %@";
+"duplicate.action.cleanup" = "Clean up %@";
+
+// MARK: - Dedup Suggestions
+"dedup.suggestion.linkedPlugins" = "%d linked plugins can be optimized further";
+"dedup.suggestion.versionConflict" = "'%@' has version conflicts: %@";
+"dedup.suggestion.spaceSaved" = "Deduplication can save about %@";
+"dedup.suggestion.bulkLink" = "Use bulk linking to manage duplicate plugins";
+
+// MARK: - Common Extras
+"common.close" = "Close";
+"common.done" = "Done";
+"common.unknown" = "Unknown";
+
+// MARK: - Settings Extended
+"settings.storage" = "Storage";
+"settings.advanced" = "Advanced";
+"settings.launch" = "Launch";
+"settings.launchAtLogin" = "Launch at Login";
+"settings.updates" = "Updates";
+"settings.autoCheckUpdates" = "Auto Check for Updates";
+"settings.storageLocation" = "Storage Location";
+"settings.storagePath" = "Storage Path";
+"settings.storedPlugins" = "Stored Plugins";
+"settings.totalSize" = "Total Size";
+"settings.clearStorage" = "Clear Storage";
+"settings.clearConfirmTitle" = "Confirm Clear";
+"settings.clear" = "Clear";
+"settings.clearConfirmMessage" = "This will remove all stored plugins. This action cannot be undone.";
+"settings.linkSettings" = "Link Settings";
+"settings.useSymlink" = "Use Symbolic Links";
+"settings.useSymlinkHelp" = "Use hard links when symbolic links are unavailable.";
+"settings.autoLinkAfterScan" = "Auto Link After Scan";
+"settings.autoLinkAfterScanHelp" = "Automatically link duplicate plugins to store.";
+"settings.fileDisplay" = "File Display";
+"settings.showHiddenFiles" = "Show Hidden Files";
+"settings.debugMode" = "Debug Mode";
+"settings.debugModeHelp" = "Show extra debug information.";
+"settings.dataManagement" = "Data Management";
+"settings.resetAll" = "Reset All Settings";
+"settings.clearCache" = "Clear Cache";
+
+// MARK: - Editor Extended
+"editor.restoreDefaults" = "Restore Defaults";
+"editor.deleteConfirmTitle" = "Confirm Delete";
+"editor.deleteConfirmMessage" = "Delete editor \"%@\"?";
+"editor.basicInfo" = "Basic Info";
+"editor.name" = "Name";
+"editor.type" = "Type";
+"editor.extensionsDirectory" = "Extensions Directory";
+"editor.path" = "Path";
+"editor.selectPath" = "Choose Path";
+"editor.status" = "Status";
+"editor.enabled" = "Enabled";
+"editor.directoryExists" = "Directory exists";
+"editor.directoryMissing" = "Directory missing";

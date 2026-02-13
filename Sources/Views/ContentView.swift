@@ -25,6 +25,9 @@ struct ContentView: View {
         } message: {
             Text(appState.errorMessage)
         }
+        .task {
+            await appState.performInitialScanIfNeeded()
+        }
     }
 }
 

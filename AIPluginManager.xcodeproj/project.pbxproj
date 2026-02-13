@@ -21,7 +21,9 @@
 		98AA4F0924667A4AF9224BAC /* PluginDiscoveryService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CD7C012B9CB8DD07B844F85 /* PluginDiscoveryService.swift */; };
 		9FD9350A9B8FCCF368C40654 /* Plugin.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCF0E1A5E945473BA1B720DE /* Plugin.swift */; };
 		BA852B7B914826CF9139BB2B /* EditorViews.swift in Sources */ = {isa = PBXBuildFile; fileRef = 425474543E7A9CFDB99D9084 /* EditorViews.swift */; };
+		C46F415109FF64A280481346 /* Localization.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5162C369497BC37822CB5307 /* Localization.swift */; };
 		F819DF6A46131F4A89F20406 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0A06F4192A2B9D9816830B5A /* Assets.xcassets */; };
+		F8A0A19D3B4C5D6E7F8091A2 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = F8A0A19D3B4C5D6E7F8091A5 /* Localizable.strings */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,6 +44,7 @@
 		46F8C4A10E8529A462375749 /* DuplicateReport.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DuplicateReport.swift; sourceTree = "<group>"; };
 		47844265C6BBCFE99A6A2D08 /* PluginListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PluginListView.swift; sourceTree = "<group>"; };
 		487B5BD28EE706B6F4E5466B /* LinkManagerService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LinkManagerService.swift; sourceTree = "<group>"; };
+		5162C369497BC37822CB5307 /* Localization.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Localization.swift; sourceTree = "<group>"; };
 		5EB8DC4083DDBEEFB1F0AC9C /* AIPluginManagerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AIPluginManagerApp.swift; sourceTree = "<group>"; };
 		7CD7C012B9CB8DD07B844F85 /* PluginDiscoveryService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PluginDiscoveryService.swift; sourceTree = "<group>"; };
 		880122C865D569C40DBF17CE /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -52,6 +55,8 @@
 		D35E04BAEDB96B1CE4C04BE4 /* AIPluginManagerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AIPluginManagerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D40F534DA2CFD21567D0A79D /* DuplicateViews.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DuplicateViews.swift; sourceTree = "<group>"; };
 		DE8824EC2D85C9BA5DF769A1 /* SettingsViews.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViews.swift; sourceTree = "<group>"; };
+		F8A0A19D3B4C5D6E7F8091A3 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		F8A0A19D3B4C5D6E7F8091A4 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Localizable.strings"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXGroup section */
@@ -101,9 +106,10 @@
 			isa = PBXGroup;
 			children = (
 				0A06F4192A2B9D9816830B5A /* Assets.xcassets */,
+				F8A0A19D3B4C5D6E7F8091A5 /* Localizable.strings */,
 			);
 			path = Resources;
-			sourceTree = "<group>";
+			sourceTree = SOURCE_ROOT;
 		};
 		453EB7F38DA17B572BEC9140 = {
 			isa = PBXGroup;
@@ -132,6 +138,7 @@
 			isa = PBXGroup;
 			children = (
 				5EB8DC4083DDBEEFB1F0AC9C /* AIPluginManagerApp.swift */,
+				5162C369497BC37822CB5307 /* Localization.swift */,
 			);
 			path = App;
 			sourceTree = "<group>";
@@ -216,7 +223,6 @@
 			buildConfigurationList = C2C0C0D61E9B6FF477EEEBE6 /* Build configuration list for PBXNativeTarget "AIPluginManager" */;
 			buildPhases = (
 				55BDD74ED2DE2E401FADCFD6 /* Sources */,
-				40B920668E4F0B17BC3EE82B /* Build Complete Notification */,
 				0D8947FD2F6858BDABA7CE03 /* Resources */,
 			);
 			buildRules = (
@@ -255,6 +261,7 @@
 			knownRegions = (
 				Base,
 				en,
+				"zh-Hans",
 			);
 			mainGroup = 453EB7F38DA17B572BEC9140;
 			minimizedProjectReferenceProxies = 1;
@@ -274,31 +281,23 @@
 			buildActionMask = 2147483647;
 			files = (
 				F819DF6A46131F4A89F20406 /* Assets.xcassets in Resources */,
+				F8A0A19D3B4C5D6E7F8091A2 /* Localizable.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
-/* Begin PBXShellScriptBuildPhase section */
-		40B920668E4F0B17BC3EE82B /* Build Complete Notification */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
+/* Begin PBXVariantGroup section */
+		F8A0A19D3B4C5D6E7F8091A5 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F8A0A19D3B4C5D6E7F8091A3 /* en */,
+				F8A0A19D3B4C5D6E7F8091A4 /* zh-Hans */,
 			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-			);
-			name = "Build Complete Notification";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "# Build completed successfully\n";
+			name = Localizable.strings;
+			sourceTree = "<group>";
 		};
-/* End PBXShellScriptBuildPhase section */
+/* End PBXVariantGroup section */
 
 /* Begin PBXSourcesBuildPhase section */
 		1F911385026A19560B16E644 /* Sources */ = {
@@ -321,6 +320,7 @@
 				39407A53CC279AD4E58BE06A /* Editor.swift in Sources */,
 				BA852B7B914826CF9139BB2B /* EditorViews.swift in Sources */,
 				27F6CC3B194CDA6D8EC62DAF /* LinkManagerService.swift in Sources */,
+				C46F415109FF64A280481346 /* Localization.swift in Sources */,
 				9FD9350A9B8FCCF368C40654 /* Plugin.swift in Sources */,
 				98AA4F0924667A4AF9224BAC /* PluginDiscoveryService.swift in Sources */,
 				5EA27B2A76C01CDC3A9603A6 /* PluginListView.swift in Sources */,
@@ -360,6 +360,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CFBundleAllowMixedLocalizations = YES;
+				CFBundleDevelopmentRegion = en;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -436,6 +438,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CFBundleAllowMixedLocalizations = YES;
+				CFBundleDevelopmentRegion = en;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";

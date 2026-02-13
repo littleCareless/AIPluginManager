@@ -26,7 +26,9 @@ targets:
         excludes:
           - "**/.DS_Store"
     resources:
-      - path: Resources
+      - path: Resources/Assets.xcassets
+      - path: Resources/en.lproj/Localizable.strings
+      - path: Resources/zh-Hans.lproj/Localizable.strings
     settings:
       base:
         PRODUCT_NAME: AIPluginManager
@@ -37,10 +39,7 @@ targets:
         CODE_SIGN_IDENTITY: "-"
         COMBINE_HIDPI_IMAGES: YES
     dependencies: []
-    postCompileScripts:
-      - script: |
-          # Build completed successfully
-        name: Build Complete Notification
+    postCompileScripts: []
 
   AIPluginManagerTests:
     type: bundle.unit-test
