@@ -23,7 +23,6 @@
 		BA852B7B914826CF9139BB2B /* EditorViews.swift in Sources */ = {isa = PBXBuildFile; fileRef = 425474543E7A9CFDB99D9084 /* EditorViews.swift */; };
 		C46F415109FF64A280481346 /* Localization.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5162C369497BC37822CB5307 /* Localization.swift */; };
 		F819DF6A46131F4A89F20406 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0A06F4192A2B9D9816830B5A /* Assets.xcassets */; };
-		F8A0A19D3B4C5D6E7F8091A2 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = F8A0A19D3B4C5D6E7F8091A5 /* Localizable.strings */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,8 +54,6 @@
 		D35E04BAEDB96B1CE4C04BE4 /* AIPluginManagerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AIPluginManagerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D40F534DA2CFD21567D0A79D /* DuplicateViews.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DuplicateViews.swift; sourceTree = "<group>"; };
 		DE8824EC2D85C9BA5DF769A1 /* SettingsViews.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViews.swift; sourceTree = "<group>"; };
-		F8A0A19D3B4C5D6E7F8091A3 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
-		F8A0A19D3B4C5D6E7F8091A4 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Localizable.strings"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXGroup section */
@@ -106,10 +103,9 @@
 			isa = PBXGroup;
 			children = (
 				0A06F4192A2B9D9816830B5A /* Assets.xcassets */,
-				F8A0A19D3B4C5D6E7F8091A5 /* Localizable.strings */,
 			);
 			path = Resources;
-			sourceTree = SOURCE_ROOT;
+			sourceTree = "<group>";
 		};
 		453EB7F38DA17B572BEC9140 = {
 			isa = PBXGroup;
@@ -261,7 +257,6 @@
 			knownRegions = (
 				Base,
 				en,
-				"zh-Hans",
 			);
 			mainGroup = 453EB7F38DA17B572BEC9140;
 			minimizedProjectReferenceProxies = 1;
@@ -281,23 +276,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				F819DF6A46131F4A89F20406 /* Assets.xcassets in Resources */,
-				F8A0A19D3B4C5D6E7F8091A2 /* Localizable.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
-
-/* Begin PBXVariantGroup section */
-		F8A0A19D3B4C5D6E7F8091A5 /* Localizable.strings */ = {
-			isa = PBXVariantGroup;
-			children = (
-				F8A0A19D3B4C5D6E7F8091A3 /* en */,
-				F8A0A19D3B4C5D6E7F8091A4 /* zh-Hans */,
-			);
-			name = Localizable.strings;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin PBXSourcesBuildPhase section */
 		1F911385026A19560B16E644 /* Sources */ = {
@@ -345,6 +327,8 @@
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				COMBINE_HIDPI_IMAGES = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSPrincipalClass = "";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/../Frameworks",
@@ -423,6 +407,8 @@
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				COMBINE_HIDPI_IMAGES = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSPrincipalClass = "";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/../Frameworks",

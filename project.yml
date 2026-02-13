@@ -51,6 +51,8 @@ targets:
         PRODUCT_BUNDLE_IDENTIFIER: com.zhangning.AIPluginManagerTests
         TEST_HOST: "$(BUILT_PRODUCTS_DIR)/AIPluginManager.app/Contents/MacOS/AIPluginManager"
         BUNDLE_LOADER: "$(TEST_HOST)"
+        GENERATE_INFOPLIST_FILE: YES
+        INFOPLIST_KEY_NSPrincipalClass: ""
     dependencies:
       - target: AIPluginManager
 
